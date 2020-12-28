@@ -1,0 +1,56 @@
+.sharing {
+  width: 100%;
+  background-color: rgba($color-primary, 0.8);
+  height: 100%;
+  padding: 3rem;
+  border-radius: 5px;
+
+  &__input,
+  &__textarea {
+    padding: 0 1rem;
+    width: 100%;
+    font-size: inherit;
+    border: none;
+    border-bottom: 2px solid $color-grey-light-1;
+    transition: border 0.3s ease-out;
+    border-radius: 2px;
+    background-color: transparent;
+    color: $color-grey-light-1;
+    font-family: inherit;
+
+    &:not(:last-child) {
+      margin-bottom: 1.5rem;
+    }
+
+    &:focus {
+      outline: none;
+
+      border-bottom: 3px solid $color-secondary-light;
+      &:invalid {
+        border-bottom: 3px solid $color-tertiary-light;
+      }
+      &:empty {
+        border-bottom: 3px solid $color-tertiary-light;
+      }
+    }
+  }
+
+  &__textarea {
+      height:15rem;
+      &::-webkit-input-placeholder {
+        font-family: inherit;
+        font-size: 1.6rem;
+        color: $color-grey-light-2;
+      }
+  }
+
+  &__input {
+    padding: 1rem;
+
+    &::-webkit-input-placeholder {
+      font-family: inherit;
+      font-size: 1.6rem;
+      color: $color-grey-light-2;
+    }
+  }
+}

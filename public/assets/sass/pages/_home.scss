@@ -1,0 +1,45 @@
+.section-aim {
+    padding:10rem 0;
+}
+
+.section-about {
+    padding:15rem 0;
+    background-image: linear-gradient(
+        120deg,
+        rgba($color-primary,.6) 45%,
+        rgba($color-secondary-light,.68) 45.2%,
+        rgba($color-secondary-dark,.5) 100%
+    ),
+    url("../img/others/about.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    &__text {
+        color:$color-grey-light-1;
+        font-weight:300;
+        font-size:2.2rem;
+        word-spacing: 3px;
+        text-align: justify;
+
+        @include respond(700px) {
+            font-size:1.5rem;
+            font-weight: 500;
+        }
+    }
+}
+
+.section-idea {
+    padding:10rem 0;
+
+    &__detail {
+        height: 100%;
+        padding:3rem;
+        border-radius: 5px;
+        box-shadow: 1rem 1rem 2rem rgba($color-black,.2);
+    }
+    & p {
+        text-align: justify;
+    }
+}

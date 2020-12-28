@@ -18,6 +18,32 @@ body {
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  display: inline-block;
+  display:block;
   backface-visibility: hidden;
+  animation:reveal 1s ease-out;
+
+  @include respond(700px) {
+    font-size:4rem;
+  }
+}
+
+.heading-secondary {
+  font-size:4rem;
+  text-transform: uppercase;
+  background-image: linear-gradient(
+    to right bottom,
+    rgba($color-tertiary-dark, 0.9),
+    rgba($color-tertiary-light, 0.9)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: 2px;
+  text-shadow: 0 .4rem 2rem rgba($color-black,.5);
+}
+
+.heading-tertiary {
+  font-weight:500;
+  text-transform: uppercase;
+  color:$color-secondary-dark;
 }

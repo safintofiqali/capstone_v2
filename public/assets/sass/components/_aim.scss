@@ -1,0 +1,23 @@
+.aim {
+    box-shadow:.5rem 1rem 2rem rgba($color-black,.05), 
+    -.5rem -1rem 2rem rgba($color-black,.05);
+    padding:2.5rem 2rem;
+    border-radius: 5px;
+    transition:all .3s ease-out;
+    
+    &:hover {
+        transform:translateY(-5px);
+        box-shadow:0rem 1rem 2rem rgba($color-black,.2);
+    }
+
+    &__icon > i {
+        font-size:5rem;
+        background-image: linear-gradient(120deg,$color-primary-light,$color-tertiary-dark);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color:transparent
+    }
+    &__text {
+        font-size:1.5rem;
+    }
+}

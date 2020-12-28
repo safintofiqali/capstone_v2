@@ -1,0 +1,26 @@
+.btn {
+    &,
+    &:link,
+    &:visited {
+        font-size:1.8rem;
+        text-decoration: none;
+        color:$color-tertiary-light;
+        padding:1rem 3.5rem;
+        border-radius: 5rem;
+        transition:all .3s ease;
+        display:inline-block;
+    }
+    &:hover {
+        box-shadow: 0 1rem 2rem rgba($color-black,.2);
+        transform: translate(4px,-5px);
+    }
+    
+    &--white {
+        background-color:$color-white;
+    }
+
+    &--animated {
+        animation:reveal .4s ease-out backwards 1s;
+    }
+}
+

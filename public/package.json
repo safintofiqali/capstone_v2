@@ -5,11 +5,18 @@
   "main": "index.js",
   "scripts": {
     "main": "node-sass --watch  assets/sass/main.scss assets/css/main.css",
-    "admin": "node-sass  --watch assets/sass/admin.scss admin/assets/css/admin.css"
+    "admin": "node-sass  --watch assets/sass/admin.scss admin/assets/css/admin.css",
+    "compile": "node-sass admin/sass/main.scss assets/css/style.comp.css",
+    "concat": "concat -o assets/css/all.css assets/css/main.css assets/css/style.comp.css",
+    "prefix": "postcss --use autoprefixer -b 'last 10 versions' assets/css/main.css -o assets/css/prefixed.css"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "node-sass": "^5.0.0"
+    "autoprefixer": "^10.1.0",
+    "concat": "^1.0.3",
+    "node-sass": "^5.0.0",
+    "postcss": "^8.2.1",
+    "postcss-cli": "^8.3.1"
   }
 }

@@ -1,1 +1,17 @@
-.grid {}
+.grid {
+  display: grid;
+
+  &--3 {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 400px));
+    justify-content: center;
+    column-gap: 5rem;
+    row-gap: 5rem;
+  }
+  &--2 {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 600px));
+    justify-content: center;
+    column-gap: 5rem;
+    row-gap: 5rem;
+    align-self: stretch;
+  }
+}
